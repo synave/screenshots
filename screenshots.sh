@@ -1,12 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Usage :
-# ./screenshots_region.sh <intervalle> <iterations> <x> <y> <largeur> <hauteur> [dossier]
+# ./screenshots.sh <intervalle> <iterations> <x> <y> <largeur> <hauteur> [dossier]
 #
 # Exemple :
-# ./screenshots_region.sh 5 10 100 200 800 600
-
-set -e
+# ./screenshots.sh 5 10 100 200 800 600
 
 INTERVAL="$1"
 ITERATIONS="$2"
@@ -32,8 +30,8 @@ else
 fi
 
 for ((i=1; i<=ITERATIONS; i++)); do
-    TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-    FILE="$OUTPUT_DIR/capture_${i}_${TIMESTAMP}.png"
+    FILENAME=$(date +"%Y%m%d_%H%M%S")
+    FILE="$OUTPUT_DIR/${FILENAME}.png"
 
     scrot -a "${X},${Y},${WIDTH},${HEIGHT}" "$FILE"
 
