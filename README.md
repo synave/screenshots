@@ -18,6 +18,7 @@ Le script utilise l'outil scrot.
 
 ```bash
 sudo apt install scrot
+```
 
 ## Usage
 
@@ -33,6 +34,7 @@ sudo apt install scrot
 |  hauteur     | Hauteur de la zone à capturer                      |
 |  dossier     | *(Optionnel)* Dossier de sortie des captures       |
 
+Si aucun dossier n'est précisé, les images seront enregistrées dans un répertoire nommée screenshots.
 
 Exemple :
 
