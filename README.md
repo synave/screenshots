@@ -38,4 +38,12 @@ Si aucun dossier n'est précisé, les images seront enregistrées dans un réper
 
 Exemple :
 
+```bash
 ./screenshots.sh 5 10 100 200 800 600
+```
+
+- une capture toutes les 5 secondes
+- 10 captures au total
+- zone située en (100,200)
+- taille de 800x600
+- sauvegarde dans le dossier screenshots (car dossier non indiqué)
